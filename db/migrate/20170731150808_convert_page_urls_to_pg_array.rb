@@ -1,4 +1,4 @@
-class ConvertPageUrlsToPgArray < ActiveRecord::Migration
+class ConvertPageUrlsToPgArray < ActiveRecord::Migration[5.0]
   def up
     execute <<~SQL
     ALTER TABLE "images" 
