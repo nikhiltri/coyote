@@ -1,7 +1,7 @@
 class AddRolesEnumeratedType < ActiveRecord::Migration[5.0]
   def up
     execute <<-SQL
-    CREATE TYPE user_role AS ENUM 
+    CREATE TYPE user_role AS ENUM
     ('viewer','author','editor','admin','super_admin','staff')
     SQL
 
